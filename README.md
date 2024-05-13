@@ -18,14 +18,14 @@
 
     2. 개발할 issues 등록 (프로젝트 관리를 위해 등록 // github 페이지에서 진행)
         - issues
-        - new issues 
-        - title 작성 (ex: nav 개발) 
-        - 내용 작성 (ex: 내용없으면 타이틀과 동일) 
-        - Assignees (본인선택) 
-        - Labels (본인라벨 선택) 
-        - Projects (official_site_ver_0.1) 
-        - submit new issue 
-        - Project 탭으로 가면 등록된 이슈가 'No Status' 상태인것을 확인 
+        - new issues
+        - title 작성 (ex: nav 개발)
+        - 내용 작성 (ex: 내용없으면 타이틀과 동일)
+        - Assignees (본인선택)
+        - Labels (본인라벨 선택)
+        - Projects (official_site_ver_0.1)
+        - submit new issue
+        - Project 탭으로 가면 등록된 이슈가 'No Status' 상태인것을 확인
         - issue status : Todo로 변경하면 해당이슈가 Todo로 이동됨
 
     3. branch 생성 (vscode에서 진행)
@@ -61,3 +61,35 @@
         - git chekchout dev (dev Branch로 이동)
         - git pull (github 저장소와 소스 동기화)
         - git branch -D 삭제할branch명 (ex : git branch -D nav)
+
+## 폴더 구조
+
+    1. 개발환경 셋팅
+    @초기폴더셋팅
+    - npx create-next-app@latest (완료)
+    - npm i로 설치 후 시작
+
+    2. 폴더 설명
+        @page.js
+        - 메인페이지
+
+        @layout.js
+        - 메인페이지를 감싸고 있는 파일
+        - 페이지 밖에 사용할 내용 (ex. 헤드태그안에 사용해야할 ui, 메뉴바, 푸터 등)
+
+        @css
+        - 폴더안에 각 영역별로 css를 만들고 layout.js에 import (추후에 하나로 합침)
+
+        @section
+        - 각 섹션별 js 생성 후 page.js(메인) import
+
+        *app폴더 안에 폴더를 만들면 url이 자동생성(자동 라우팅)
+        - 만든 폴더안에 page.js(고정)을 생성하여 코드작성
+        - page.js 안에 export default function 필수
+
+        * 로컬서버
+        cd OFFICIAL-SITE 이동 후 npm run dev
+
+        * 'use client'
+        - 클라이언트 사이드 렌더링
+        - 스크립트나, if문, for문 onClick 함수 useState 등 사용할때 최상단에 적용
