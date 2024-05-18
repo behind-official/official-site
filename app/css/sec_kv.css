@@ -1,0 +1,8 @@
+.sec_kv {display: flex;justify-content: center; }
+.sec_kv .text_box{font-size: 180px; font-weight: 900; line-height: 215px; color: #0504AF;}
+.sec_kv .text_box p{ letter-spacing: -8.24px; }
+.sec_kv .text_box p span{ letter-spacing: -8.24px; }
+.sec_kv .text_box p .text_icon{display: inline-block; width: 127px; height: 127px; margin-left: 23px; background: url('/images/kv/text_icon.png') no-repeat center/contain;}
+.sec_kv .text_box p.text_weight{font-weight: 100;}
+.sec_kv .text_box .text_padding01{padding-left: 591px;}
+.sec_kv .text_box .text_padding02{padding-right: 467px;}
