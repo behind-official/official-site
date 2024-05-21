@@ -5,7 +5,7 @@
   }
 }
 
-.sec_kv {display: flex;justify-content: center; }
+.sec_project_wrap section.sec_kv {display: flex;justify-content: center; }
 .sec_kv .kv_container .text_box{font-size: 180px; font-weight: 900; line-height: 215px; color: #0504AF;}
 .sec_kv .kv_container .text_box p{ margin: 0; opacity: 0; visibility: hidden; letter-spacing: -8.24px; }
 .sec_kv .kv_container .text_box p.animated-text{ opacity: 1; transition: opacity 0.5s ease; }
@@ -14,7 +14,7 @@
 .sec_kv .kv_container .text_box p.light_text{font-weight: 100;}
 .sec_kv .kv_container .text_box p.description_text{position: relative;}
 .sec_kv .kv_container .text_box p.description_text::after{content: 'BeHind :\A Where Innovation Meets Art in\A Superior Web Solutions'; position: absolute; top: 50%; transform: translateY(-50%); right: 98px; width: 285px; height: 84px; font-size: 16px; font-weight: 500; line-height: 28px; white-space: pre; letter-spacing: initial; color: #0D0D31;}
-.sec_kv .kv_container .text_box p.text_margin01 span:first-of-type{margin-right: 590px;}
-.sec_kv .kv_container .text_box p.text_margin02 span:last-of-type{margin-left: 467px;}
+.sec_kv .kv_container .text_box p.text_margin span:first-of-type{margin-right: 590px;}
+.sec_kv .kv_container .text_box p.text_padding span:last-of-type{padding-left: 467px;}
 /* .sec_kv .kv_container .text_box .text_padding01{padding-left: 591px;} */
 /* .sec_kv .kv_container .text_box .text_padding02{padding-right: 467px;} */

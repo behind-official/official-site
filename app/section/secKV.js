@@ -46,10 +46,10 @@ export default function Kv() {
         <section className="sec_kv">
             <div className="kv_container">
                 <div className="text_box">
-                    <p className="animated-text text_margin01">[BRINGING</p>
+                    <p className="animated-text text_margin">[BRINGING</p>
                     <p className="animated-text">VISIONARY<i className="text_icon"></i></p>
                     <p className="animated-text light_text">To Reality</p>
-                    <p className="animated-text description_text text_margin02">YOUR IDEAS]</p>
+                    <p className="animated-text description_text text_padding">YOUR IDEAS]</p>
                 </div>
 
             </div>
