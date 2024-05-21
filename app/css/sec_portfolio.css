@@ -1,0 +1,5 @@
+.sec_portfolio .inner_1920 {display: flex; flex-wrap: wrap; justify-content: space-between;  width: 1520px;}
+.sec_portfolio .inner_1920 .list_item {width: 488px; margin-bottom: 100px;}
+.sec_portfolio .inner_1920 .list_item a {display: block; margin-bottom: 30px;}
+.sec_portfolio .inner_1920 .list_item--title {margin-bottom: 22px; font-size: 22px; font-weight: 500;}
+.sec_portfolio .inner_1920 .list_item--desc {font-size: 16px; line-height: 19px;}

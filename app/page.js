@@ -7,7 +7,7 @@ import "./css/reset.css";
 export default async function Home() {
 
   return (
-    <main>
+    <main className='sec_project_wrap'>
       <SecKv/>
       <SecAsk/>
     </main>

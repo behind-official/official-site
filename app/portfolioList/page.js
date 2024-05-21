@@ -7,24 +7,28 @@ export default async function Portfoliolist() {
     const client = await connectDB;
     const db = client.db("behind")
     
-    let result = await db.collection('portfolio').find().toArray();
+    let result = await db.collection('portfolio').find().sort({order: -1}).toArray();
     JSON.stringify(result)
-    
+
     return(
-        <div className="list-bg">
-            {
-                result.map((a, i)=> {
-                    return(
-                        <div className="list-item" key={i}>
-                            <h4>{result[i].title}</h4>
-                            <Link href={"/portfolioDetail/" + result[i]._id}>
-                                링크
-                            </Link>
-                            <p>{result[i].int}</p>
-                        </div>
-                    )
-                })
-            }
+        <div className="sec_portfolio">
+            <div className="inner_1920">
+                {
+                    result.map((a, i)=> {
+                        return(
+                            <div className="list_item" key={i}>
+                                <Link href={"/portfolioDetail/" + result[i]._id}>
+                                    <div className="img_box">
+                                        <img src={`/images/portfolio/portfolio_list0${i}_pc.png`}/>
+                                    </div>
+                                </Link>
+                                <h4 className="list_item--title">{result[i].title}</h4>
+                                <p className="list_item--desc">{result[i].int}</p>
+                            </div>
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }
