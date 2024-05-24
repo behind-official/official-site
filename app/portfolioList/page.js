@@ -13,21 +13,30 @@ export default async function Portfoliolist() {
     return(
         <div className="sec_portfolio">
             <div className="inner_1920">
-                {
-                    result.map((a, i)=> {
-                        return(
-                            <div className="list_item" key={i}>
-                                <Link href={"/portfolioDetail/" + result[i]._id}>
-                                    <div className="img_box">
-                                        <img src={`/images/portfolio/portfolio_list0${i}_pc.png`}/>
-                                    </div>
-                                </Link>
-                                <h4 className="list_item--title">{result[i].title}</h4>
-                                <p className="list_item--desc">{result[i].int}</p>
-                            </div>
-                        )
-                    })
-                }
+                <div className="title_box">
+                    <p className="title">OUR PROJECT</p>
+                    <div className="typing">
+                        <p className="typing_txt">PROGRESS</p>
+                        {/* <p className="typing_dot">.</p> */}
+                    </div>
+                </div>
+                <div className="contents_box">
+                    {
+                        result.map((a, i)=> {
+                            return(
+                                <div className="list_item" key={i}>
+                                    <Link href={"/portfolioDetail/" + result[i]._id}>
+                                        <div className="img_box">
+                                            <img src={`/images/portfolio/portfolio_list00_pc.png`}/>
+                                        </div>
+                                    </Link>
+                                    <h4 className="list_item--title">{result[i].title}</h4>
+                                    <p className="list_item--desc">{result[i].int}</p>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             </div>
         </div>
     )
