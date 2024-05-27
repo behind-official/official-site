@@ -1,20 +1,26 @@
-.sec_portfolio .inner_1920 { width: 1520px; margin: 0 auto;}
-.sec_portfolio .inner_1920 .title_box {display: flex; align-items: center; justify-content: space-between; margin-bottom: 90px;}
-.sec_portfolio .inner_1920 .title_box .title {font-size: 120px; color: #0504AF; font-weight: 800; letter-spacing: -6px;}
-.sec_portfolio .inner_1920 .typing {display: flex; justify-content: flex-end; align-items: baseline; width: 688px; border-bottom: 2px solid #0504AF;}
-.sec_portfolio .inner_1920 .typing .typing_txt {font-size: 100px; color: #B4B4E7; font-weight: 200; animation: blink .5s infinite, typing 2s steps(22); white-space: nowrap; overflow: hidden;}
-.sec_portfolio .inner_1920 .typing::after {content: '.'; margin-left: 10px; font-size: 100px; color: #0504AF; font-weight: 800; animation: blink .5s infinite; white-space: nowrap; overflow: hidden;}
-.sec_portfolio .inner_1920 .typing .typing_dot {margin-left: 10px; font-size: 100px; color: #0504AF; font-weight: 800;}
-.sec_portfolio .inner_1920 .contents_box {display: flex; flex-wrap: wrap; justify-content: space-between;}
-.sec_portfolio .inner_1920 .list_item {width: 488px; margin-bottom: 100px;}
-.sec_portfolio .inner_1920 .list_item a {display: block; margin-bottom: 30px;}
-.sec_portfolio .inner_1920 .list_item--title {margin-bottom: 22px; font-size: 22px; font-weight: 500;}
-.sec_portfolio .inner_1920 .list_item--desc {font-size: 16px; line-height: 19px;}
+.sec_portfolio {padding-top: 126px;}
+.sec_portfolio .inner_1520 .title_box {display: flex; align-items: center; justify-content: space-between; margin-bottom: 90px;}
+.sec_portfolio .inner_1520 .title_box .title {font-size: 120px; color: #0504AF; font-weight: 800; letter-spacing: -6px;}
+.sec_portfolio .inner_1520 .typing {display: flex; justify-content: flex-end; align-items: baseline; width: 688px; border-bottom: 2px solid #0504AF;}
+.sec_portfolio .inner_1520 .typing .typing_txt {font-size: 100px; color: #B4B4E7; font-weight: 200; animation: blink .5s infinite, typing 2s steps(22); white-space: nowrap; overflow: hidden;}
+.sec_portfolio .inner_1520 .typing::after {content: '.'; margin-left: 10px; font-size: 100px; color: #0504AF; font-weight: 800; animation: dot .5s infinite; animation-delay: 2s; white-space: nowrap; overflow: hidden;}
+.sec_portfolio .inner_1520 .typing .typing_dot {margin-left: 10px; font-size: 100px; color: #0504AF; font-weight: 800;}
+.sec_portfolio .inner_1520 .contents_box {display: flex; flex-wrap: wrap; justify-content: space-between;}
+.sec_portfolio .inner_1520 .list_item {width: 488px; margin-bottom: 100px;}
+.sec_portfolio .inner_1520 .list_item a {display: block; margin-bottom: 30px;}
+.sec_portfolio .inner_1520 .list_item--title {margin-bottom: 22px; font-size: 22px; font-weight: 500;}
+.sec_portfolio .inner_1520 .list_item--desc {font-size: 16px; line-height: 19px;}
 
 
 @keyframes blink {
     50% {
         border-color: transparent;
+    }
+}
+
+@keyframes dot {
+    50% {
+        color: transparent;
     }
 }
 

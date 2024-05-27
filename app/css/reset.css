@@ -32,7 +32,7 @@ word-break:normal;
 body{
 	width:100%; height:100%;  
 }
-main {width: 1920px; margin: 0 auto;}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
 /*html, body {height:100%;}*/
@@ -139,12 +139,14 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 .sec_project_wrap .img_box img{width:100%;}
 
 .sec_project_wrap .inner_1920,
+.sec_project_wrap .inner_1520,
 .sec_project_wrap .inner_1440,
 .sec_project_wrap .inner_1320,
 .sec_project_wrap .inner_1280,
 .sec_project_wrap .inner_1200{position:relative; width: 100%; margin: 0 auto;}
 
 .sec_project_wrap .inner_1920{max-width: 1920px;}
+.sec_project_wrap .inner_1520{max-width: 1520px;}
 .sec_project_wrap .inner_1440{max-width: 1440px;}
 .sec_project_wrap .inner_1320{max-width: 1320px;}
 .sec_project_wrap .inner_1280{max-width: 1280px;}
@@ -168,6 +170,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
 @media all and (min-width:769px) and (max-width:1440px) {
 
+    .sec_project_wrap .inner_1520{max-width: 100%;}
     .sec_project_wrap .inner_1440{max-width: 100%;}
     .sec_project_wrap .inner_1320{max-width: 91.6666vw;}
     .sec_project_wrap .inner_1280{max-width: 88.8889vw;}
@@ -182,6 +185,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     .sec_project_wrap section{max-width:100%;}
 
     .sec_project_wrap .inner_1920,
+    .sec_project_wrap .inner_1520,
     .sec_project_wrap .inner_1440,
     .sec_project_wrap .inner_1320,
     .sec_project_wrap .inner_1280,
