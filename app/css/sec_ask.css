@@ -1,27 +1,59 @@
+.fc_blue {
+  color: #0504AF;
+}
+
+input:focus {
+  outline: 1px solid #0504AF;
+}
+
+.inner_1260 {max-width: 1260px; margin: 0 auto;}
+
 .sec_ask {
     padding: 190px 0 120px 0;
 }
 .ask_tit {
-    font-size: 56px; 
+    font-size: 3.5em; 
     font-weight: 700; 
     color: #0504AF; 
     text-align: center;
     margin-bottom: 146px;
 }
-.ask_list {display: flex; max-width: 1260px; margin: 0 auto 100px; flex-wrap: wrap; gap: 28px;}
-.ask_item {display: flex; flex-direction: column; width: calc(50% - 28px);}
+.ask_list {
+  display: flex; 
+  justify-content: space-between;
+  margin-bottom: 40px; 
+  flex-wrap: wrap; 
+  gap: 14px;
+}
 
-.ask_item label {
+
+.ask_item {
+  display: flex; 
+  flex-direction: column; 
+  width: calc(100% / 2 - 14px);
+}
+
+.ask_item .item_tit,
+.ask_textarea .item_tit {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 18px;
+}
+
+.ask_textarea .item_tit {
+  display: block;
 }
 
 .ask_item input {
     border: 1px solid rgba(0,0,0,.1);
     height: 54px;
     margin-bottom: 10px;
+    padding-left: 20px;
 }
+
+.ask_textarea {margin-bottom: 100px;}
+
+.ask_cont {height: 200px;}
 
 /* 셀렉트 박스 */
 .select_box {
@@ -30,7 +62,7 @@
     border: 1px solid rgba(0,0,0,.1);
   }
   .select_box .select {
-    width: inherit;
+    width: 99%;
     height: inherit;
     background: transparent;
     border: 0 none;
@@ -40,9 +72,10 @@
     z-index: 3;
   }
   .select_box .select option {
-    background: rgba(0,0,0,.5);
-    color: #fff;
-    padding: 3px 0;
+    background: #fff;
+    border: 1px solid #0504AF;
+    color: #0504AF;
+    padding: 20px 0;
     font-size: 16px;
   }
   .select_box .icoArrow {
