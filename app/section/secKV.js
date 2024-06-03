@@ -90,7 +90,7 @@ export default function Kv() {
     return (
         <section className="sec_kv">
             <div className="kv_container">
-                <div className="text_box">
+                <div className="text_box animate_box">
                     <p className="animated-text text_margin">[BRINGING</p>
                     <p className="animated-text">VISIONARY<i className="text_icon"></i></p>
                     <p className="animated-text light_text">To Reality</p>
@@ -109,6 +109,9 @@ export default function Kv() {
                     <div className="img_box visual04">
                         <img src="/images/kv/visual04.png" alt="" />
                     </div>
+                </div>
+                <div className="text_box">
+                    <p className="subtitle">WELCOME TO OUR <br />AGENCY <strong>THE INNOVATTION</strong></p>
                 </div>
             </div>
         </section>
