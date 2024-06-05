@@ -2,16 +2,14 @@
 
 import { useRef } from "react";
 
-export default function Footer() {
+export default function Footer(props) {
 
     const goToTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      
+        window.scrollTo({ top: 0, behavior: "smooth" });  
     };
     const contact = () => {
-        const element = useRef<HTMLDivElement>(null);
-        element.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    };
+        props.data()
+    }
 
     return(
         <footer>
@@ -79,7 +77,7 @@ export default function Footer() {
                 </button>
                 <div className="contact_area">
                     <p className="contact_title">MEETS EXPERTISE <img src="./../images/footer_star_ico.svg" alt="별표모양 아이콘" /> <br/>BEHIND PROJECT.</p>
-                    <button className="contact_btn">Contact Us</button>
+                    <button className="contact_btn" onClick={() => {contact()}}>Contact Us</button>
                 </div>
                 <div className="company_info">
                     <div className="inf">

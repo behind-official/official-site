@@ -5,7 +5,6 @@ import "./css/reset.css";
 
 
 export default async function Home() {
-
   return (
     <main className='sec_project_wrap'>
       <SecKv/>
