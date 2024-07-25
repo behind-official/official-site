@@ -21,8 +21,8 @@ export default async function Portfoliodetail(props) {
             Clientname:"CJ제일제당",
             title:"[2024삼성 갤럭시 언팩]",
             order:"1",
-            imgPC: "",
-            imgMO: "",
+            imgPC: "O",
+            imgMO: "-",
         }
 
     let changedFront = result.front.split(' ');
@@ -115,6 +115,34 @@ export default async function Portfoliodetail(props) {
                                 }
                                 </dd>
                             </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="detail_all">
+                <div className="inner_1520">
+                    <p className="detail_title">VIEW DETAIL</p>
+                    <div className="detail_area">
+
+                        {/* PC 포트폴리오 KV 이미지 */}
+                        <div className="img_box pc_kv_img">
+                            <img src={'./../../../images/portfolio/' + result._id + '_web_all_pc.png'} alt={result.title + '의 웹사이트'} />
+                        </div>
+                        {/* PC 포트폴리오 이미지 */}
+                        <div className="img_box pc_img">
+                            <img src={'./../../../images/portfolio/' + result._id + '_web_all_pc.png'} alt={result.title + '의 웹사이트'} />
+                        </div>
+
+                        {/* MO 포트폴리오 이미지 */}
+                        <div>
+                            {
+                                result.imgMO === "O"
+                                ? <div className="img_box mo_img" >
+                                    <img src={'./../../../images/portfolio/' + result._id + '_web_all_mo.png'} alt={result.title + '의 웹사이트'} />
+                                    </div>
+                                :null
+                            }
                         </div>
                     </div>
                 </div>
