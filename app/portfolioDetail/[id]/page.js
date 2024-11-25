@@ -1,6 +1,8 @@
 // 'use client';
 // import { ObjectId } from "mongodb";
 // import { connectDB } from "../../util/database.js";
+import '../../css/portfoliList.css'
+
 export default async function Portfoliodetail(props) {
 
     // const client = await connectDB;
@@ -15,9 +17,9 @@ export default async function Portfoliodetail(props) {
             period:"24.05.01 - 24.05.10",
             int:"이것은 이러한 종류의 뭐시기인데 몇출까지 되려나 계속 쭈욱 쓸 수 있으려나 테스트 중, 줄이 길어지면 안되니까 적당히 5줄 이",
             url:"https://www.naver.com/",
-            front:"HTML CSS3 SCSS javaScrit jQuery",
-            back:"PHP Mysql MongoDB",
-            design:"Photoshop illustrator Figma",
+            front:"HTML,CSS3,SCSS,javaScrit,jQuery",
+            back:"PHP,Mysql,MongoDB",
+            design:"Photoshop,illustrator,Figma",
             Clientname:"CJ제일제당",
             title:"[2024삼성 갤럭시 언팩]",
             order:"1",
@@ -25,9 +27,9 @@ export default async function Portfoliodetail(props) {
             imgMO: "-",
         }
 
-    let changedFront = result.front.split(' ');
-    let changedBack = result.back.split(' ');
-    let changedDesign = result.design.split(' ');
+    let changedFront = result.front.split(',');
+    let changedBack = result.back.split(',');
+    let changedDesign = result.design.split(',');
 
 
     return (
@@ -73,7 +75,7 @@ export default async function Portfoliodetail(props) {
                         </div>
                         <div className="area_txt area_txt--skill">
                             <p className="skill_title">SKILL</p>
-                            <dl>
+                            {changedFront != '-' ? <dl>
                                 <dt>프론트엔드</dt>
                                 <dd>
                                 {
@@ -86,8 +88,9 @@ export default async function Portfoliodetail(props) {
                                     })
                                 }
                                 </dd>
-                            </dl>
-                            <dl>
+                            </dl> : null}
+                            
+                            {changedBack != '-' ?  <dl>
                                 <dt>백엔드</dt>
                                 <dd>
                                 {
@@ -100,8 +103,9 @@ export default async function Portfoliodetail(props) {
                                     })
                                 }
                                 </dd>
-                            </dl>
-                            <dl>
+                            </dl> : null}
+                            
+                            {changedDesign != '-' ? <dl>
                                 <dt>디자인</dt>
                                 <dd>
                                 {
@@ -114,7 +118,8 @@ export default async function Portfoliodetail(props) {
                                     })
                                 }
                                 </dd>
-                            </dl>
+                            </dl> : null}
+                            
                         </div>
                     </div>
                 </div>
