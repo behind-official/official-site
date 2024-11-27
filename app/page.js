@@ -120,18 +120,21 @@ export default function Home() {
                         <p className="animated-text light_text">To Reality</p>
                         <p className="animated-text description_text text_padding">YOUR IDEAS]</p>
                     </div>
-                    <div className="visual_box">
-                        <div className="img_box visual01">
-                            <img src="/images/kv/visual01.png" alt="" />
-                        </div>
-                        <div className="img_box visual02">
-                            <img src="/images/kv/visual02.png" alt="" />
-                        </div>
-                        <div className="img_box visual03">
-                            <img src="/images/kv/visual03.png" alt="" />
-                        </div>
-                        <div className="img_box visual04">
-                            <img src="/images/kv/visual04.png" alt="" />
+                    <div className="visual_wrap">
+                        <div className="visual_box">
+                            <div className="img_box visual01">
+                                <img src="/images/kv/visual01.png" alt="" />
+                            </div>
+                            <div className="img_box visual02">
+                                <img src="/images/kv/visual02.png" alt="" />
+                            </div>
+                            <div className="img_box visual03">
+                                <img src="/images/kv/visual03.png" alt="" />
+                            </div>
+                            <div className="img_box visual04">
+                                <img src="/images/kv/visual04.png" alt="" />
+                            </div>
+
                         </div>
                     </div>
                     <div className="text_box">

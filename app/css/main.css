@@ -7,7 +7,7 @@
 
 .sec_project_wrap section.sec_kv { display: flex;justify-content: center; margin: 0 auto; }
 .sec_project_wrap section.sec_kv .kv_container { width: 100%; margin-bottom: 100px;}
-.sec_kv .kv_container .text_box.animate_box{ margin-bottom: 100px; font-size: 180px; font-weight: 900; line-height: 215px; color: #0504AF;}
+.sec_kv .kv_container .text_box.animate_box{ margin: 0 auto; margin-bottom: 100px; max-width: 1559px; font-size: 180px; font-weight: 900; line-height: 215px; color: #0504AF;}
 .sec_kv .kv_container .text_box.animate_box p{ display: flex; align-items: center; margin: 0; opacity: 0; visibility: hidden; letter-spacing: -8.24px; }
 .sec_kv .kv_container .text_box.animate_box p.animated-text{ opacity: 1; transition: opacity 0.5s ease; }
 .sec_kv .kv_container .text_box.animate_box p span{ display: inline-block; opacity: 0; transform: translateY(100%); transition: opacity 0.5s ease, transform 0.5s ease; letter-spacing: -8.24px; }
@@ -18,7 +18,8 @@
 .sec_kv .kv_container .text_box.animate_box p.text_margin span:first-of-type{ margin-right: 590px; }
 .sec_kv .kv_container .text_box.animate_box p.text_padding span:last-of-type{ padding-left: 467px; }
 
-.sec_kv .kv_container .visual_box { display: flex; justify-content: space-between; padding: 0 15px; padding-top: 150px; margin-bottom: 69px; }
+.sec_kv .kv_container .visual_wrap{margin: 0 auto; max-width: 1547px;}
+.sec_kv .kv_container .visual_box { display: flex; justify-content: space-between; width: 100%; padding: 0 15px; padding-top: 150px; margin-bottom: 69px; }
 /* .sec_kv .kv_container .visual_box .img_box.handelScroll { transform: translateY(0); } */
 .sec_kv .kv_container .visual_box .img_box img { width: 100%;}
 .sec_kv .kv_container .visual_box .img_box.visual01 { width: 359px; }
@@ -143,6 +144,7 @@ input:focus {
 
 @media all and (min-width:769px) and (max-width:1440px) {
   /* .sec_kv .kv_container {max-width: 1024px;} */
+  .sec_kv{border: 1px solid red;}
   .sec_kv .kv_container .text_box.animate_box{ margin: 0 auto; width: fit-content; font-size: 150px; }
   .sec_kv .kv_container .visual_box {padding-top: 171px;}
   .sec_kv .kv_container .text_box.animate_box p.text_margin span:first-of-type{ margin-right: 279px; }
