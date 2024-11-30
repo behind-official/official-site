@@ -1,0 +1,76 @@
+/* 전체 배너 컨테이너 */
+.bannerWrap {
+    position: relative;
+    padding-top: 337px;
+    overflow: hidden;
+  }
+  
+  /* 배너 제목 */
+  .bannerWrap .bannerTitle {
+    width: 100%;
+    height: 100vh;
+    font-size: 400px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-transform: uppercase;
+    box-sizing: border-box;
+  }
+  
+  .bannerWrap .bannerTitle .a {
+    color: #0504afb2;
+  }
+  
+  .bannerWrap .bannerTitle .b {
+    display: inline-block;
+    transform: scaleY(-1); /* 위아래 반전 */
+    -webkit-text-stroke: 2px #0504afb2; /* 텍스트 외곽선 */
+    color: transparent;
+  }
+  
+  /* 카드 컨테이너 */
+  .bannerWrap .bannerImage {
+    position: absolute;
+    left: 60%;
+    top: 337px;
+    transform: translateX(-50%) rotate(28deg); /* 기본 회전 */
+    max-width: 504px;
+    perspective: 1000px; /* 3D 효과 */
+    width: 100%;
+  }
+  
+  .bannerWrap .bannerImage img {
+    width: 100%;
+  }
+  
+  /* 카드 스타일 */
+  .card {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform-style: preserve-3d; /* 3D 회전 활성화 */
+    transition: transform 0.6s ease; /* 부드러운 회전 애니메이션 */
+  }
+  
+  /* 카드가 뒤집힌 상태 */
+  .card.flipped {
+    transform: rotateY(180deg); /* 좌우 뒤집기 */
+  }
+  
+  /* 카드 앞면 */
+  .cardFront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* 뒤집힐 때 숨기기 */
+    transform: rotateY(0deg); /* 기본 앞면 상태 */
+  }
+  
+  /* 카드 뒷면 */
+  .cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* 뒤집힐 때 숨기기 */
+    transform: rotateY(180deg); /* 기본 뒷면 상태 */
+  }
+  

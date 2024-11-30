@@ -5,7 +5,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Header from "./components/header"
 import Footer from "./components/footer"
+import Introduce from "./components/Introduce.js"
 import "./css/main.css";
+import './globals.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -138,10 +140,13 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="text_box">
-                        <p className="subtitle">WELCOME TO OUR <br />AGENCY <strong>THE INNOVATTION</strong></p>
+                        <p className="subtitle"><span>[</span>WELCOME TO OUR <br /><em>AGENCY</em> <strong>THE INNOVATTION<span>]</span></strong></p>
                     </div>
                 </div>
             </section>
+            <section className="secIntro">
+                <Introduce />
+            </section>                
 
             <div className="sec_ask" ref={(el) => (scrollRef.current = el)}>
                 <div className="inner_1260">

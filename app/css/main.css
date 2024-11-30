@@ -7,19 +7,19 @@
 
 .sec_project_wrap section.sec_kv { display: flex;justify-content: center; margin: 0 auto; }
 .sec_project_wrap section.sec_kv .kv_container { width: 100%; margin-bottom: 100px;}
-.sec_kv .kv_container .text_box.animate_box{ margin: 0 auto; margin-bottom: 100px; max-width: 1559px; font-size: 180px; font-weight: 900; line-height: 215px; color: #0504AF;}
+.sec_kv .kv_container .text_box.animate_box{ margin: 0 auto; max-width: 1559px; height: 100vh; font-size: clamp(50px, 10vw, 150px); font-weight: 900; line-height: 196px; color: #0504AF;}
 .sec_kv .kv_container .text_box.animate_box p{ display: flex; align-items: center; margin: 0; opacity: 0; visibility: hidden; letter-spacing: -8.24px; }
 .sec_kv .kv_container .text_box.animate_box p.animated-text{ opacity: 1; transition: opacity 0.5s ease; }
 .sec_kv .kv_container .text_box.animate_box p span{ display: inline-block; opacity: 0; transform: translateY(100%); transition: opacity 0.5s ease, transform 0.5s ease; letter-spacing: -8.24px; }
 .sec_kv .kv_container .text_box.animate_box p .text_icon{ display: inline-block; width: 127px; height: 127px; margin-left: 23px; }
 .sec_kv .kv_container .text_box.animate_box p.light_text{ font-weight: 100; }
 .sec_kv .kv_container .text_box.animate_box p.description_text{ position: relative; }
-.sec_kv .kv_container .text_box.animate_box p.description_text::after{ content: 'BeHind :\A Where Innovation Meets Art in\A Superior Web Solutions'; position: absolute; top: 50%; transform: translateY(-50%); right: 98px; width: 285px; height: 84px; font-size: 16px; font-weight: 500; line-height: 28px; white-space: pre; letter-spacing: initial; color: #0D0D31; }
-.sec_kv .kv_container .text_box.animate_box p.text_margin span:first-of-type{ margin-right: 590px; }
-.sec_kv .kv_container .text_box.animate_box p.text_padding span:last-of-type{ padding-left: 467px; }
+.sec_kv .kv_container .text_box.animate_box p.description_text::after{ content: '아이디어를 디지털 현실로 변환하여 혁신적인 솔루션을 \A제공합니다. 당신의 비전을 우리의 전문성으로 실현합니다.\A함께 미래를 디자인해 보세요.'; position: absolute; top: 60%; transform: translateY(-50%); right: 13%; width: 285px; height: 84px; font-size: 16px; font-weight: 500; line-height: 28px; white-space: pre; letter-spacing: initial; color: #0D0D31; }
+.sec_kv .kv_container .text_box.animate_box p.text_margin span:first-of-type{ margin-right: 591px; font-weight: 200;}
+.sec_kv .kv_container .text_box.animate_box p.text_padding span:last-of-type{ padding-left: 48%; font-weight: 200;}
 
 .sec_kv .kv_container .visual_wrap{margin: 0 auto; max-width: 1547px;}
-.sec_kv .kv_container .visual_box { display: flex; justify-content: space-between; width: 100%; padding: 0 15px; padding-top: 150px; margin-bottom: 69px; }
+.sec_kv .kv_container .visual_box { display: flex; justify-content: space-between; width: 100%; padding: 0 15px; margin-bottom: 69px; }
 /* .sec_kv .kv_container .visual_box .img_box.handelScroll { transform: translateY(0); } */
 .sec_kv .kv_container .visual_box .img_box img { width: 100%;}
 .sec_kv .kv_container .visual_box .img_box.visual01 { width: 359px; }
@@ -27,10 +27,15 @@
 .sec_kv .kv_container .visual_box .img_box.visual03 { width: 488px; }
 .sec_kv .kv_container .visual_box .img_box.visual04 { width: 359px; }
 
-.sec_kv .kv_container .text_box{}
-.sec_kv .kv_container .text_box .subtitle{ font-size: 8.125em; color: #0504AF; }
-.sec_kv .kv_container .text_box .subtitle strong{ font-weight: 900; }
+.sec_kv .kv_container .text_box{margin: 0 auto; max-width: 1547px;}
+.sec_kv .kv_container .text_box .subtitle{ position: relative; padding-top:120px; font-size: clamp(50px, 6vw, 106px); font-weight: 300; letter-spacing: -4.75px; color: #0504AF; }
+.sec_kv .kv_container .text_box .subtitle em{padding-left: 5%;}
+.sec_kv .kv_container .text_box .subtitle::after{ content: '저희의 최고 작품을 통해 창의성과 혁신의 여정을 함께합니다.\A선도적인 브랜드를 위한 성공적인 디자인 사례를 확인하세요.'; position: absolute; top:50%; right: 7%; white-space: pre; font-size:16px; font-weight: 500; letter-spacing: -0.05em; line-height: 28px; color: #0D0D31; }
+.sec_kv .kv_container .text_box .subtitle span{margin-right: 50px; font-weight: 100;}
+.sec_kv .kv_container .text_box .subtitle strong span{ margin-right: 0; margin-left: 50px; font-weight: 100;}
+.sec_kv .kv_container .text_box .subtitle strong{ font-weight: 600; }
 
+.secIntro {background: #131313;}
 
 .fc_blue {
   color: #0504AF;
@@ -136,6 +141,24 @@ input:focus {
 
 .btn_submit {display: block; margin: 0 auto; width: 141px; height: 55px; font-weight: 700; border: 1px solid #000; background-color: #fff;}
 
+/* PC 1650px ~ 1301px  1400화면에서 확인*/
+@media screen and (max-width:1650px) {
+    /* .sec_kv .kv_container {max-width: 1024px;} */
+  /* .sec_kv{border: 1px solid red;} */
+  .sec_kv .kv_container .text_box.animate_box{ margin: 0 auto; width: fit-content; height: 100vh; line-height: 180px;}
+  .sec_kv .kv_container .visual_box {padding-top: 171px;}
+  .sec_kv .kv_container .text_box.animate_box p.text_margin span:first-of-type{ margin-right: 710px; }
+  /* .sec_kv .kv_container .text_box.animate_box p.description_text::after{display: none;} */
+  .sec_kv .kv_container .text_box.animate_box p.text_padding span:last-of-type{ padding-left: 45%; }
+
+  .sec_kv .kv_container .text_box{max-width: 1263px;}
+  /* .sec_kv .kv_container .text_box .subtitle{ position: relative; padding-top:120px; font-size: clamp(50px, 10vw, 113px); font-weight: 300; letter-spacing: -4.75px; color: #0504AF; } */
+  .sec_kv .kv_container .text_box .subtitle::after{ right: 3%; }
+  .sec_kv .kv_container .text_box .subtitle span{margin-right: 50px; font-weight: 100;}
+  .sec_kv .kv_container .text_box .subtitle strong span{ margin-right: 0; margin-left: 50px; font-weight: 100;}
+  .sec_kv .kv_container .text_box .subtitle strong{ font-weight: 600; }
+}
+
 @media all and (min-width: 1441px) {
   .sec_kv .kv_container {
     max-width: 1920px;
@@ -143,17 +166,6 @@ input:focus {
 }
 
 @media all and (min-width:769px) and (max-width:1440px) {
-  /* .sec_kv .kv_container {max-width: 1024px;} */
-  .sec_kv{border: 1px solid red;}
-  .sec_kv .kv_container .text_box.animate_box{ margin: 0 auto; width: fit-content; font-size: 150px; }
-  .sec_kv .kv_container .visual_box {padding-top: 171px;}
-  .sec_kv .kv_container .text_box.animate_box p.text_margin span:first-of-type{ margin-right: 279px; }
-  .sec_kv .kv_container .text_box.animate_box p.description_text::after{display: none;}
-  .sec_kv .kv_container .text_box.animate_box p.text_padding span:last-of-type{ padding-left: 102px; }
 
-  /* .sec_kv .kv_container .visual_box .img_box.visual01 { width: 229px; }
-  .sec_kv .kv_container .visual_box .img_box.visual02 { width: 146px; }
-  .sec_kv .kv_container .visual_box .img_box.visual03 { width: 312px; }
-  .sec_kv .kv_container .visual_box .img_box.visual04 { width: 229px; } */
 
 }
