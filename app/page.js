@@ -6,7 +6,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Header from "./components/header"
 import Footer from "./components/footer"
+import Introduce from "./components/Introduce.js"
 import "./css/main.css";
+import './globals.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -135,25 +137,31 @@ export default function Home() {
                         <p className="animated-text light_text">To Reality</p>
                         <p className="animated-text description_text text_padding">YOUR IDEAS]</p>
                     </div>
-                    <div className="visual_box">
-                        <div className="img_box visual01">
-                            <img src="/images/kv/visual01.png" alt="" />
-                        </div>
-                        <div className="img_box visual02">
-                            <img src="/images/kv/visual02.png" alt="" />
-                        </div>
-                        <div className="img_box visual03">
-                            <img src="/images/kv/visual03.png" alt="" />
-                        </div>
-                        <div className="img_box visual04">
-                            <img src="/images/kv/visual04.png" alt="" />
+                    <div className="visual_wrap">
+                        <div className="visual_box">
+                            <div className="img_box visual01">
+                                <img src="/images/kv/visual01.png" alt="" />
+                            </div>
+                            <div className="img_box visual02">
+                                <img src="/images/kv/visual02.png" alt="" />
+                            </div>
+                            <div className="img_box visual03">
+                                <img src="/images/kv/visual03.png" alt="" />
+                            </div>
+                            <div className="img_box visual04">
+                                <img src="/images/kv/visual04.png" alt="" />
+                            </div>
+
                         </div>
                     </div>
                     <div className="text_box">
-                        <p className="subtitle">WELCOME TO OUR <br />AGENCY <strong>THE INNOVATTION</strong></p>
+                        <p className="subtitle"><span>[</span>WELCOME TO OUR <br /><em>AGENCY</em> <strong>THE INNOVATTION<span>]</span></strong></p>
                     </div>
                 </div>
             </section>
+            <section className="secIntro">
+                <Introduce />
+            </section>                
 
             <div className="sec_ask" ref={(el) => (scrollRef.current = el)}>
                 <div className="inner_1260">
