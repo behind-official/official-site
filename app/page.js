@@ -1,5 +1,6 @@
 'use client';
 
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -109,6 +110,20 @@ export default function Home() {
     }, []);
     const scrollRef = useRef();
 
+    const pathName = usePathname()
+    const router = useRouter()
+    
+    // 메인 이동 + 문의하기 섹션 앵커
+
+    function scrollEvtHandler() {
+      if(pathName == '/'){
+          scrollRef.current.scrollIntoView({behavior: "smooth"})
+      } else {
+          router.push('/')
+          scrollRef.current.scrollIntoView({behavior: "smooth"})
+      }
+    }
+    
     return (
         <>  
             <Header/>
@@ -197,7 +212,7 @@ export default function Home() {
                     </form>
                 </div>
             </div>
-            <Footer scrollRef={scrollRef}/>
+            <Footer scrollEvtHandler={scrollEvtHandler}/>
         </>
     );
 }

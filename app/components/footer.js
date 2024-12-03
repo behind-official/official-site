@@ -1,27 +1,12 @@
-'use client'
 
-import { usePathname } from "next/navigation";
 import "../css/footer.css"
-import { useRouter } from "next/navigation";
 
-export default function Footer({scrollRef}) {
+export default function Footer({scrollEvtHandler}) {
 
     // 해당 페이지 최상단으로 이동
     const goToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });  
     };
-    const pathName = usePathname()
-    const router = useRouter()
-    
-    // 메인 이동 + 문의하기 섹션 앵커
-    const scrollToClick = () => {
-        if(pathName == '/'){
-            scrollRef.current.scrollIntoView({behavior: "smooth"})
-        } else {
-            router.push('/')
-            scrollRef.current.scrollIntoView({behavior: "smooth"})
-        }
-    }
 
     return(
         <footer>
@@ -89,7 +74,7 @@ export default function Footer({scrollRef}) {
                 </button>
                 <div className="contact_area">
                     <p className="contact_title">MEETS EXPERTISE <img src="./../images/footer_star_ico.svg" alt="별표모양 아이콘" /> <br/>BEHIND PROJECT.</p>
-                    <button type="button" className="contact_btn" onClick={scrollToClick}>Contact Us</button>
+                    <button type="button" className="contact_btn" onClick={scrollEvtHandler}>Contact Us</button>
                 </div>
                 <div className="company_info">
                     <div className="inf">
