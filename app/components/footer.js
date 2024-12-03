@@ -1,7 +1,7 @@
 
 import "../css/footer.css"
 
-export default function Footer({scrollEvtHandler}) {
+export default function Footer({}) {
 
     // 해당 페이지 최상단으로 이동
     const goToTop = () => {
@@ -74,7 +74,7 @@ export default function Footer({scrollEvtHandler}) {
                 </button>
                 <div className="contact_area">
                     <p className="contact_title">MEETS EXPERTISE <img src="./../images/footer_star_ico.svg" alt="별표모양 아이콘" /> <br/>BEHIND PROJECT.</p>
-                    <button type="button" className="contact_btn" onClick={scrollEvtHandler}>Contact Us</button>
+                    <button className="contact_btn">Contact Us</button>
                 </div>
                 <div className="company_info">
                     <div className="inf">

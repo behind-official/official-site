@@ -170,24 +170,24 @@ export default function Home() {
                         <ul className="ask_list">
                             <li className="ask_item">
                                 <label className="item_tit" for="compayName">회사명 <em className="fc_blue">*</em></label>
-                                <input type="text" placeholder="BEHIND" id="companyName" required/>
+                                <input type="text" placeholder="BEHIND" id="companyName" name="company" required/>
                             </li>
                             <li className="ask_item">
                                 <label className="item_tit" for="managerName">담당자명 <em className="fc_blue">*</em></label>
-                                <input type="text" placeholder="홍길동" id="managerName" required/>
+                                <input type="text" placeholder="홍길동" id="managerName" name="name" required/>
                             </li>
                             <li className="ask_item">
                                 <label className="item_tit" for="managerEmail">이메일 <em className="fc_blue">*</em></label>
-                                <input type="email" placeholder="admin@behind.co.kr" id="managerEmail" required/>
+                                <input type="email" placeholder="admin@behind.co.kr" id="managerEmail" name="email" required/>
                             </li>
                             <li className="ask_item">
                                 <label className="item_tit" for="managerPhone">연락처 <em className="fc_blue">*</em></label>
-                                <input type="tel" placeholder="010-1234-5678" id="managerPhone" required/>
+                                <input type="tel" placeholder="010-1234-5678" id="managerPhone" name="phone" required/>
                             </li>
                             <li className="ask_item">
                                 <span className="item_tit">예산 <em className="fc_blue">*</em></span>
                                 <div className="select_box">
-                                    <select id="budget" className="select">
+                                    <select id="budget" className="select" name="price">
                                         <option disabled selected>예산을 선택해주세요.</option>
                                         <option value="500만원 이하">500만원 이하</option>
                                         <option value="400만원 이하">400만원 이하</option>
@@ -200,11 +200,11 @@ export default function Home() {
                             <li className="ask_item">
                                 <span className="item_tit">서비스 종류 <em className="fc_blue">*</em></span>
                                 <div className="select_box">
-                                    <select id="budget" className="select">
+                                    <select id="budget" className="select" name="service">
                                         <option disabled selected>서비스 종류를 선택해주세요.</option>
                                         <option value="웹사이트">웹사이트</option>
-                                        <option value="광고영상">광고영상</option>
-                                        <option value="뮤직비디오">뮤직비디오</option>
+                                        <option value="웹디자인">웹디자인</option>
+                                        <option value="영상편집">영상편집</option>
                                     </select>
                                 </div>
                             </li>
@@ -212,15 +212,15 @@ export default function Home() {
 
                         <div className="ask_textarea">
                             <span className="item_tit">문의내용</span>
-                            <textarea type="text" placeholder="내용을 입력하세요" className="ask_cont" id="askCont"></textarea>
+                            <textarea type="text" placeholder="내용을 입력하세요" className="ask_cont" id="askCont" name="content"></textarea>
                         </div>
 
                         
-                        <button type="submit" className="btn_submit">SUBMIT</button>
+                        <button className="btn_submit">SUBMIT</button>
                     </form>
                 </div>
             </div>
-            <Footer scrollEvtHandler={scrollEvtHandler}/>
+            <Footer/>
         </>
     );
 }
