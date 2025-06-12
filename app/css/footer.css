@@ -1,5 +1,5 @@
 /* 헤더 */
-header .inner_1520 {display: flex; align-items: center; justify-content: space-between; padding: 50px 0;}
+header .inner_1520 {display: flex; align-items: center; justify-content: space-between; padding: 50px 20px;}
 header .header_logo {width: 96px;}
 header .header_desc {font-size: 20px; font-weight: 500;}
 
@@ -11,6 +11,8 @@ footer .banner_area .banner_list--02 {z-index: 9; top: 100px; background-color: 
 footer .banner_area .banner_list .list_text {position: absolute; top: 50%; left: 0; display: flex; align-items: center; justify-content: space-between; width: 1920px; height: 100%; animation: 33s linear 0s infinite normal forwards running rollingleft1;}
 footer .banner_area .banner_list .list_text.clone {position: absolute; left: 1975px; display: flex; align-items: center; justify-content: space-between; width: 1920px; height: 100%; animation: 33s linear 0s infinite normal none running rollingleft2;}
 footer .banner_area .banner_list .list_text p {color: #9F9EFF; font-size: 16px; font-weight: 500; letter-spacing: 4px;}
+
+footer .inner_1520 {padding: 0 20px;}
 
 footer .contact_area {display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 189px;}
 footer .contact_area .contact_title {font-size: 120px; line-height: 140px; color: #0504AF; font-weight: 800;}

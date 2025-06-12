@@ -133,23 +133,23 @@ export default function Home() {
                 <div className="kv_container inner_1520">
                     <div className="text_box animate_box">
                         <p className="animated-text text_margin">[BRINGING</p>
-                        <p className="animated-text">VISIONARY<img src="./../images/kv/text_icon.png" alt="별표모양 아이콘" className="text_icon" /></p>
+                        <p className="animated-text">VISIONARY<img src="http://behind.rf.gd/text_icon.png" alt="별표모양 아이콘" className="text_icon" /></p>
                         <p className="animated-text light_text">To Reality</p>
                         <p className="animated-text description_text text_padding">YOUR IDEAS]</p>
                     </div>
                     <div className="visual_wrap">
                         <div className="visual_box">
                             <div className="img_box visual01">
-                                <img src="/images/kv/visual01.png" alt="" />
+                                <img src="http://behind.rf.gd/visual01.png" alt="" />
                             </div>
                             <div className="img_box visual02">
-                                <img src="/images/kv/visual02.png" alt="" />
+                                <img src="http://behind.rf.gd/visual02.png" alt="" />
                             </div>
                             <div className="img_box visual03">
-                                <img src="/images/kv/visual03.png" alt="" />
+                                <img src="http://behind.rf.gd/visual03.png" alt="" />
                             </div>
                             <div className="img_box visual04">
-                                <img src="/images/kv/visual04.png" alt="" />
+                                <img src="http://behind.rf.gd/visual04.png" alt="" />
                             </div>
 
                         </div>
@@ -163,7 +163,7 @@ export default function Home() {
                 <Introduce />
             </section>                
 
-            <div className="sec_ask" ref={(el) => (scrollRef.current = el)}>
+            {/* <div className="sec_ask" ref={(el) => (scrollRef.current = el)}>
                 <div className="inner_1260">
                     <h4 className="ask_tit">START A PROJECT 🎉</h4>
                     <form action="/api/post/new" method="POST">
@@ -219,7 +219,7 @@ export default function Home() {
                         <button className="btn_submit">SUBMIT</button>
                     </form>
                 </div>
-            </div>
+            </div> */}
             <Footer/>
         </>
     );

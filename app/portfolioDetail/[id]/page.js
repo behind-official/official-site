@@ -25,10 +25,10 @@ export default async function Portfoliodetail(props) {
                 <div className="detail_kv">
                     <div className="kv_img01">
                         <div className="img_box">
-                            <img src={'./../../../images/portfolio/' + result._id + '_web_all_pc.png'} alt={result.title + '의 웹사이트'} />
+                            <img src={'https://behind.rf.gd/' + result._id + '.jpg'} alt={result.title + '의 웹사이트'} />
                         </div>
                     </div>
-                    <div className="kv_img02">
+                    {/* <div className="kv_img02">
                         <div className="img_box">
                             <img src={'./../../../images/portfolio/' + result._id + '_web_all_pc.png'} alt={result.title + '의 웹사이트'} />
                         </div>
@@ -37,7 +37,7 @@ export default async function Portfoliodetail(props) {
                         <div className="img_box">
                             <img src={'./../../../images/portfolio/' + result._id + '_web_all_pc.png'} alt={result.title + '의 웹사이트'} />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="detail_info">
                     <div className="inner_1520">
@@ -58,7 +58,7 @@ export default async function Portfoliodetail(props) {
                                 </dl>
                                 <dl>
                                     <dt>URL</dt>
-                                    <dd><a href={result.url} title={result.title + "페이지로 이동"}>{result.url}</a></dd>
+                                    <dd><a href={result.url} title={result.title + "페이지로 이동"} target="_blank">{result.url}</a></dd>
                                 </dl>
                             </div>
                             <div className="area_txt area_txt--skill">
@@ -113,21 +113,21 @@ export default async function Portfoliodetail(props) {
                     </div>
                 </div>
 
-                <div className="detail_all">
+                {/* <div className="detail_all">
                     <div className="inner_1520">
                         <p className="detail_title">VIEW DETAIL</p>
                         <div className="detail_area">
 
-                            {/* PC 포트폴리오 KV 이미지 */}
+                     
                             <div className="img_box pc_kv_img">
                                 <img src={'./../../../images/portfolio/' + result._id + '_web_all_pc.png'} alt={result.title + '의 웹사이트'} />
                             </div>
-                            {/* PC 포트폴리오 이미지 */}
+                          
                             <div className="img_box pc_img">
                                 <img src={'./../../../images/portfolio/' + result._id + '_web_all_pc.png'} alt={result.title + '의 웹사이트'} />
                             </div>
 
-                            {/* MO 포트폴리오 이미지 */}
+                   
                             <div>
                                 {
                                     result.imgMO === "O"
@@ -139,7 +139,7 @@ export default async function Portfoliodetail(props) {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )
